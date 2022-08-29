@@ -1,0 +1,18 @@
+---
+import TitleIndex from "../components/TitleIndex.astro";
+
+const src = 'https://astro.build/assets/press/full-logo-dark.png'
+---
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Astro</title>
+</head>
+<body>
+	<TitleIndex />
+	<a href="/another">Another</a>
+	<img src={src} w-full />
+	<img src={src} class="w-1/2" block mx-auto />
+</body>
+</html>
